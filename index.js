@@ -24,7 +24,7 @@ const PORT=9000;
 // .then(()=> console.log('Db Connected.....'))
 // .catch((err)=> console.log('Db connection failed:', err) );
 
-const isConnected = false;
+let isConnected = false;
  async function connectToDatabase() {
   try {
     await mongoose.connect(process.env.Mongo_URL, {
